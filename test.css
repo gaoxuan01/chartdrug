@@ -1,0 +1,61 @@
+html, body, div, iframe {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.chart-container-div{
+    width: 80%;
+    margin:50px auto;
+}
+.chart-container {
+    border: 1px solid #dfdfdf;
+    position: relative;
+    overflow: hidden;
+    /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUAQMAAAC3R49OAAAABlBMVEUAAAAnNk6AHRRIAAAAAnRSTlMAsyT7Lw4AAAANSURBVAjXY2hgoCoAACfQAIGM5uSyAAAAAElFTkSuQmCC);*/
+}
+
+.chart-unit-div {
+    background: white;
+    padding: 3.5px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.chart-unit-div .con {
+    border: 1px solid #aaa;
+    height: 100%;
+    width: 100%;
+}
+
+.chart-unit-div .chart-drug-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+}
+
+.chart-unit-div .chart-del, .chart-unit-div .chart-edit {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+    .chart-container{
+        background-image: none !important;
+        height: auto !important;
+    }
+    .chart-unit-div {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 400px !important;
+        height: 300px!important;
+    }
+}
